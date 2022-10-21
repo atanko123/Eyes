@@ -16,10 +16,10 @@ addEventListener('mousemove', (e) => {
 
     const position = calculateEyePosition(mouseX, mouseY)
 
-    for (let eye of eyes) {
+    Array.from(eyes).forEach(eye => {
         eye.style.left = position.x + "px"
-        eye.style.top = position.y + "px"
-    }
+        eye.style.top = position.y + "px"        
+    })
 })
 
 function calculateEyePosition (mouseX, mouseY) {
