@@ -4,10 +4,36 @@ html, body {
     margin: 0;
 }
 
-.wrapper {
+#wrapper {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+}
+
+.image {
+    width: 700px;
+    height: 700px;
+}
+
+.eyes {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.eye {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
 }
